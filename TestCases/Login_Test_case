@@ -1,0 +1,24 @@
+Test Scenario: User logs into a website
+Test case ID:001
+steps:
+1.Go to website.
+2.Enter valid username.
+3.Enter valid password.
+4.click on login
+Expected result: Loggin successfully and user should enter into dashboard page.
+Test Case ID:002
+Steps:
+1.Go to website.
+2.Enter 1234 as username.
+3.Enter valid password.
+4.Click on login.
+Expected result:1.Appropriate error message should be displayed.
+2.User should be on same page.
+Test case ID:003
+steps:
+1.Go to website.
+2.Enter valid username.
+3.Enter invalid password.
+4.click on login
+Expected result: 1.Appropriate error message of invalid password should be displayed.
+2.User should stay on the same page.
