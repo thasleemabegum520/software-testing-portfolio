@@ -22,3 +22,20 @@ steps:
 4.click on login
 Expected result: 1.Appropriate error message of invalid password should be displayed.
 2.User should stay on the same page.
+Test Case ID:004
+Steps:
+1.Go to website.
+2.Dont enter anything in the username field.
+3.Enter valid password.
+4.Click on login.
+Expected result: 1.Error message "Username should not be empty" should be displayed.
+2.User should stay on the same page.
+Test Case ID:005
+Steps:
+1.Go to website.
+2.Enter valid username.
+3.Dont enter anything in the password field.
+4.Click on login.
+Expected result:1.Error message "Please enter password" should be displayed.
+2.User should stay on the same page.
+
