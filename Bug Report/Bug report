@@ -6,7 +6,7 @@ Steps:
 4.Click on login.
 Expected result:1.Error message "Please enter password" should be displayed.
 2.User should stay on the same page.
-Actual result: Error message is not displaying.
-severity:High
-Priority:high
+Actual result: No validation message is displayed when the password field is left empty and the Login button is clicked.
+severity:Medium
+Priority:Medium
 screenshot:
