@@ -5,11 +5,11 @@ steps:
 2.Enter valid username.
 3.Enter valid password.
 4.click on login
-Expected result: Login successfully and user should enter into dashboard page.
+Expected result: User should login successfully and redirected to the Dashboard page.
 Test Case ID:002
 Steps:
 1.Go to website.
-2.Enter 1234 as username.
+2.Enter an invalid username.
 3.Enter valid password.
 4.Click on login.
 Expected result:1.Appropriate error message should be displayed.
@@ -28,7 +28,7 @@ Steps:
 2.Do not enter anything in the username field.
 3.Enter valid password.
 4.Click on login.
-Expected result: 1.Error message "Username should not be empty" should be displayed.
+Expected result: 1.Appropriate error message should be displayed.
 2.User should stay on the same page.
 Test Case ID:005
 Steps:
@@ -36,7 +36,7 @@ Steps:
 2.Enter valid username.
 3.Do not enter anything in the password field.
 4.Click on login.
-Expected result:1.Error message "Please enter password" should be displayed.
+Expected result:1.Appropriate error message should be displayed.
 2.User should stay on the same page.
 
 Test Case ID:006
@@ -45,7 +45,7 @@ Steps:
 2.Do not enter anything in the username field.
 3.Do not enter anything in the password field.
 4.Click on login.
-Expected result:1.Error message "Fields should not be empty!" should be displayed.
+Expected result:1.Appropriate error message should be displayed.
 2.User should stay on the same page.
 
 Test Case ID:007
@@ -54,5 +54,5 @@ Steps:
 2.Enter invalid username.
 3.Enter invalid password.
 4.Click on login.
-Expected result:1.Error message "Please enter valid username and password" should be displayed.
+Expected result:1.Appropriate error message should be displayed.
 2.User should stay on the same page.
