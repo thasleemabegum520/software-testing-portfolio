@@ -1,4 +1,4 @@
-Test Scenario: User logs into a website
+Test Scenario: Login functionality of a website
 Test case ID:001
 steps:
 1.Go to website.
@@ -39,3 +39,20 @@ Steps:
 Expected result:1.Error message "Please enter password" should be displayed.
 2.User should stay on the same page.
 
+Test Case ID:006
+Steps:
+1.Go to website.
+2.Do not enter anything in the username field.
+3.Do not enter anything in the password field.
+4.Click on login.
+Expected result:1.Error message "Fields should not be empty!" should be displayed.
+2.User should stay on the same page.
+
+Test Case ID:007
+Steps:
+1.Go to website.
+2.Enter invalid username.
+3.Enter invalid password.
+4.Click on login.
+Expected result:1.Error message "Please enter valid username and password" should be displayed.
+2.User should stay on the same page.
