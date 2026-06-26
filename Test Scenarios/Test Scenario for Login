@@ -1,8 +1,8 @@
 Test Scenario:
-1:Verify login with valid username and valid password.
-2.Verify login with invalid username and valid password.
-3.Verify login with valid username and invalid password.
-4.Verify login with empty username and valid password.
-5. Verify login with valid username and empty password.
-6.Verify login with empty username and empty password.
-7.Verify login with invalid username and invalid password.
+1:Verify user login with valid username and valid password.
+2.Verify failing user login with invalid username and valid password.
+3.Verify failing user login with valid username and invalid password.
+4.Verify failing user login with empty username and valid password.
+5. Verify failing user login with valid username and empty password.
+6.Verify failing user login with empty username and empty password.
+7.Verify failing user login with invalid username and invalid password.
