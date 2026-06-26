@@ -1,3 +1,8 @@
 Test Scenario:
-1. Login funcionality.
-2. Registration functionality.
+1:Verify login with valid username and valid password.
+2.Verify login with invalid username and valid password.
+3.Verify login with valid username and invalid password.
+4.Verify login with empty username and valid password.
+5. Verify login with valid username and empty password.
+6.Verify login with empty username and empty password.
+7.Verify login with invalid username and invalid password.
