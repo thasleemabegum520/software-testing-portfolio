@@ -1,4 +1,5 @@
 Bug ID:001
+Bug Summary: Appropriate error message is not displaying on leaving the password field empty.
 Steps:
 1.Go to website.
 2.Enter valid username.
@@ -9,4 +10,15 @@ Expected result:1.Error message "Please enter password" should be displayed.
 Actual result: No validation message is displayed when the password field is left empty and the Login button is clicked.
 severity:Medium
 Priority:Medium
+screenshot:
+
+Bug ID:002
+Bug Summary: Password field is not masked while entering the password.
+Steps:
+1.Go to website.
+2.Enter valid password.
+Expected result:Password should be masked.
+Actual result: Password is not masked.
+severity:high
+Priority:high
 screenshot:

@@ -56,3 +56,9 @@ Steps:
 4.Click on login.
 Expected result:1.Appropriate error message should be displayed.
 2.User should stay on the same page.
+
+Test Case ID:008
+Steps:
+1.Go to website.
+2.Enter valid password.
+Expected result:Password should be masked.

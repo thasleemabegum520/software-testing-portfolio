@@ -6,3 +6,4 @@ Test Scenario:
 5. Verify failing user login with valid username and empty password.
 6.Verify failing user login with empty username and empty password.
 7.Verify failing user login with invalid username and invalid password.
+8.Verify password is masked.
