@@ -1,0 +1,24 @@
+Test Scenario: Registration functional of a E-commerce website.
+Test Case ID:101
+Steps;
+1.Go to E-commerce website.
+2. click on "New Registration".
+Expected Result:On clicking "New Registration", the page should be redirected to the new registration page.
+Test Case ID:102
+Steps:
+1.Go to E-commerce website.
+2.Click on "New Registration".
+3.Enter valid email id.
+4.Enter valid Name.
+5.click on "Submit"
+Expected Result: The user should be registered successfully and redirected to login page.
+Test Case ID:103
+Steps:
+1.Go to E-commerce website.
+2.Click on "New Registration".
+3.Enter invalid email id.
+4.Enter valid Name.
+5.click on "Submit"
+Expected Result:
+1. Appropriate error message should be displayed.
+2. User should stay on the same page.
