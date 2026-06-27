@@ -1,0 +1,12 @@
+Bug ID:BUG301
+Bus Summary: User Dashboard donot display header "Welcome Username".
+Steps:
+1.Go to website.
+2.Enter valid username.
+3.Enter valid password.
+4.click Login.
+Expected result:The user should be redirected to the dashboard with Header "Welcome Username"
+Actual result: The page is redirected to the dash board but header message is not displayed.
+severity:Low
+Priority:Medium
+Screenshot:

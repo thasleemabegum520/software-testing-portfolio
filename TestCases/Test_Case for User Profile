@@ -1,0 +1,7 @@
+Test Case ID:301
+Steps:
+1.Go to website.
+2.Enter valid username.
+3.Enter valid password.
+4.click Login.
+Expected result:The user should be redirected to the dashboard with welcome message "Welcome Username"

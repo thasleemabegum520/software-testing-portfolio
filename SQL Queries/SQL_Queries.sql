@@ -1,23 +1,25 @@
 -- Retrieve all the rows and columns
 SELECT * FROM ORDERS;
 
---Retrieve order id and product name column from table orders
-SELECT ORDER_ID, PRODUCT_NAME
+--Retrieve order id and CUSTOMER ID PURCHASED THE ORDER
+SELECT ORDER_ID, CUSTOMER_ID
 FROM ORDERS;
 
---Retrieve data of orders who purchased laptop
+--Retrieve data of orders who purchased ON 26/3/2026
 SELECT * FROM ORDERS
-WHERE PRODUCT_NAME='LAPTOP';
+WHERE ORDER_DATE='23/3/2026';
 
---Retrieve product name and no of orders to that product
-SELECT PRODUCT_NAME, COUNT(*)
+--Retrieve CUSTOMERID AND NO OF THE PURCHASES THEY MADE
+SELECT CUSTOMER_ID, COUNT(*) AS NO_OF_PURCHASES
 FROM ORDERS
-GROUP BY PRODUCT_NAME;
+GROUP BY CUSTOMER_ID;
 
---Retrieve customer names,orderid  who purchased laptops
-SELECT C.CUSTOMER_NAME, C.ORDER_ID
-FROM ORDERS S INNER JOIN CUSTOMERS C
+--Retrieve customer ID AND PRICE OF THEIR PURCHASE
+SELECT S.CUSTOMER_ID, C.PRICE
+FROM ORDERS S INNER JOIN ORDER_DETAILS C
 ON S.ORDER_ID=C.ORDER_ID;
 
 --Retrieve product name and no of sales of that product with price more than 1000
-SELECT PRODUCT_NAME,COUNT(*) FROM ORDERS GROUP BY PRODUCT_NAME HAVING PRICE>1000;
+SELECT ORDER_DATE,ORDER_ID,COUNT(*)
+FROM ORDERS
+GROUP BY ORDER_DATE HAVING COUNT(*)>=2;
