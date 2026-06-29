@@ -19,7 +19,7 @@ SELECT S.CUSTOMER_ID, C.PRICE
 FROM ORDERS S INNER JOIN ORDER_DETAILS C
 ON S.ORDER_ID=C.ORDER_ID;
 
---Retrieve order date and no of sales of that product with price more than 1000
+--Retrieve order date ,order ID , and no of sales on that day if sales are more than 2
 SELECT ORDER_DATE,ORDER_ID,COUNT(*)
 FROM ORDERS
-GROUP BY ORDER_DATE HAVING COUNT(*)>=2;
+GROUP BY ORDER_DATE HAVING COUNT(*)>2;
