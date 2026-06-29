@@ -5,11 +5,11 @@ SELECT * FROM ORDERS;
 SELECT ORDER_ID, CUSTOMER_ID
 FROM ORDERS;
 
---Retrieve data of orders who purchased ON 26/3/2026
+--Retrieve data of orders who purchased ON 23/3/2026
 SELECT * FROM ORDERS
 WHERE ORDER_DATE='23/3/2026';
 
---Retrieve CUSTOMERID AND NO OF THE PURCHASES THEY MADE
+--Retrieve CUSTOMER ID AND NO OF THE PURCHASES THEY MADE
 SELECT CUSTOMER_ID, COUNT(*) AS NO_OF_PURCHASES
 FROM ORDERS
 GROUP BY CUSTOMER_ID;
@@ -19,7 +19,7 @@ SELECT S.CUSTOMER_ID, C.PRICE
 FROM ORDERS S INNER JOIN ORDER_DETAILS C
 ON S.ORDER_ID=C.ORDER_ID;
 
---Retrieve product name and no of sales of that product with price more than 1000
+--Retrieve order date and no of sales of that product with price more than 1000
 SELECT ORDER_DATE,ORDER_ID,COUNT(*)
 FROM ORDERS
 GROUP BY ORDER_DATE HAVING COUNT(*)>=2;
