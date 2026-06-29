@@ -1,12 +1,14 @@
 # software-testing-portfolio
 This repository contains sample Manual Testing artifacts, including:
 
-*[TestCases](TestCases)
+* [Test Plan](Test%20Plan)
 
-*[Bug Reports](Bug%20Reports)
+* [Test Scenarios](Test%20Scenarios)
 
-*QA Documentation
+* [TestCases](TestCases)
 
-*[SQL Queries](SQL%20Queries)
+* [Bug Reports](Bug%20Reports)
+
+* [SQL Queries](SQL%20Queries)
 
 The project demonstrates fundamental software testing skills such as test case design, defect reporting, and validation testing
