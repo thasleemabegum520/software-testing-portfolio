@@ -1,5 +1,5 @@
 # software-testing-portfolio
-This repository contains sample Manual Testing artifacts, including:
+This repository contains sample Manual Testing artifacts for E-Commerce website, including:
 
 * [Test Plan](Test%20Plan)
 
