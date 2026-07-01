@@ -1,4 +1,4 @@
-Bug ID: BUG_300
+Bug ID: BUG_400
 Title: Cart items are displayed in an inconsistent order after page refresh
 Module: Shopping Cart
 Steps to Reproduce:
@@ -17,18 +17,5 @@ The order of products changes after refreshing the Cart page, making the sequenc
 Severity: Medium
 Priority: Medium
 
-Bug ID:BUG_301
-Title: Selected category is not visually highlighted after clicking "Phones"
-Module: Product Categories
-Steps to Reproduce:
-1.	Open the website homepage.
-2.	Click on the Phones category.
-3.	Observe the category list.
-Expected Result:
-The selected category should be visually highlighted (e.g., different color, background, or active state) to indicate it is currently selected.
-Actual Result:
-The selected category is not highlighted, making it difficult for users to identify the active category.
-Severity & Priority
-•	Severity: Low (the functionality still works—the products are filtered correctly).
-•	Priority: Low (it doesn't block any user action, but it affects usability).
+
 

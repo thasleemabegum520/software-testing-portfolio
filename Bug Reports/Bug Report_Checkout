@@ -1,0 +1,42 @@
+Bug ID:BUG_500
+Title: Checkout allows purchase even when cart is empty.
+Module: Checkout (Place Order flow)
+Bug Description: The application allows the user to proceed with checkout and complete a purchase even when the cart has no products added. This results in an invalid order being placed without any items.
+Steps to Reproduce:
+1. Open website.
+2.	Login with valid credentials
+3.	Ensure cart is empty
+4.	Go to Cart page
+5.	Click on “Place Order”
+6.	Fill in required order details
+7.	Click “Purchase”
+Actual Result:
+•	User is able to place an order successfully
+•	Purchase confirmation is shown
+•	No validation for empty cart
+Expected Result:
+•	System should prevent checkout if cart is empty
+•	Proper validation message should be shown (e.g., “Your cart is empty”)
+•	Purchase should not proceed
+Severity:Critical / High (Because it allows invalid transactions and breaks business logic)
+Priority:High (Core checkout validation failure).
+
+Bug ID:BUG_501
+Title: Cart page displays table structure even when cart is empty
+Module: Cart Page
+Bug Description: When the cart is empty, the application still displays the cart table structure (columns like Product Name, Price, Title, etc.) instead of showing an empty cart message or empty state UI.
+Steps to Reproduce:
+1.	Open website.
+2.	Login with valid credentials.
+3.	Ensure no products are added to cart.
+4.	Go to “Cart” page
+Actual Result:
+•	Cart page shows table headers (Product Name, Price, Title)
+•	No products are displayed
+•	No message indicating that the cart is empty
+Expected Result:
+•	System should show a proper empty cart message such as “Your cart is empty”
+•	OR display a friendly empty state UI
+•	Table structure should be hidden when no data exists
+Severity: Low to Medium (Functional behavior is correct, but UX is not handled properly)
+Priority: Medium (Affects user experience and clarity)

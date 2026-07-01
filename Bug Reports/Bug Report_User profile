@@ -10,3 +10,18 @@ Actual result: The page is redirected to the dash board but header message is no
 severity:Low
 Priority:Medium
 Screenshot:
+
+Bug ID:BUG_302
+Title: Selected category is not visually highlighted after clicking "Phones"
+Module: Product Categories
+Steps to Reproduce:
+1.	Open the website homepage.
+2.	Click on the Phones category.
+3.	Observe the category list.
+Expected Result:
+The selected category should be visually highlighted (e.g., different color, background, or active state) to indicate it is currently selected.
+Actual Result:
+The selected category is not highlighted, making it difficult for users to identify the active category.
+Severity & Priority
+•	Severity: Low (the functionality still works—the products are filtered correctly).
+•	Priority: Low (it doesn't block any user action, but it affects usability).
