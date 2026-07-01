@@ -41,18 +41,12 @@ Expected Result:
 Severity: Low to Medium (Functional behavior is correct, but UX is not handled properly)
 Priority: Medium (Affects user experience and clarity)
 
-Bug ID:BUG_502accepts invalid card number format (e.g., “12” is accepted)
-📍 Module
-Checkout / Place Order
-________________________________________
-🌐 URL
-https://www.demoblaze.com/index.html
-________________________________________
-🐛 Bug Description
-The Place Order form accepts an invalid card number (e.g., “12”) and still allows the order to be placed successfully. The system does not validate card number format, length, or structure.
-________________________________________
-🔁 Steps to Reproduce
-1.	Open https://www.demoblaze.com/index.html
+Bug ID:BUG_502
+Bug Title: Accepts invalid card number format (e.g., “12” is accepted)
+Module: Checkout / Place Order
+Bug Description: The Place Order form accepts an invalid card number (e.g., “12”) and still allows the order to be placed successfully. The system does not validate card number format, length, or structure.
+Steps to Reproduce:
+1.	Open Website.
 2.	Login with valid credentials
 3.	Add product to cart
 4.	Go to Cart
@@ -62,21 +56,47 @@ o	Name: valid name
 o	Country/City/Month/Year: valid values
 o	Card Number: 12
 7.	Click “Purchase”
-________________________________________
-❗ Actual Result
+Actual Result:
 •	Order is placed successfully
 •	Invalid card number is accepted
 •	No validation error shown
-________________________________________
-✅ Expected Result
+Expected Result:
 •	Card number should be validated (length + numeric format)
 •	Invalid inputs like “12” should be rejected
 •	Proper error message should be shown (e.g., “Enter valid card number”)
-________________________________________
-🔥 Severity
-Critical / High
-👉 Because it affects payment validation integrity
-________________________________________
-⚡ Priority
-High
-👉 Core checkout/payment validation issue
+Severity: Critical / High (Because it affects payment validation integrity)
+Priority: High (Core checkout/payment validation issue)
+
+Bug ID:BUG_503
+Title: Place Order form allows submission with invalid Name (spaces), valid card number, and empty mandatory fields.
+Module: Checkout / Place Order
+Bug Description: The Place Order form allows successful submission even when:
+•	Name contains only whitespace
+•	Card number is valid
+•	Other mandatory fields (Country, City, Month, Year) are left empty
+The system does not properly validate required fields, blank inputs, or input sanitization.
+Steps to Reproduce:
+1.	Open Website.
+2.	Login with valid credentials
+3.	Add product to cart
+4.	Go to Cart
+5.	Click “Place Order”
+6.	Enter:
+o	Name: " " (only spaces)
+o	Card Number: valid value
+o	Other required fields: leave empty
+7.	Click “Purchase”
+Actual Result:
+•	Order is placed successfully
+•	No validation errors are shown
+•	Invalid Name (spaces) is accepted
+•	Empty mandatory fields are accepted
+Expected Result:
+•	Name field should reject whitespace-only input
+•	All mandatory fields should be validated
+•	Empty fields should block submission
+•	System should show proper validation messages
+Severity: High (Because it breaks checkout validation and allows invalid order submission)
+Priority: High (Core business flow (payment/order process) is affected).
+
+
