@@ -1,13 +1,43 @@
-Bug ID:101
+Bug ID:BUG101
 Steps:
 1.Go to website.
 2.Click on "New Registration".
 3.Enter valid Email id.
 3.Do not enter anything in the password field.
-4.Click on login.
+4.Click on 'Register'.
 Expected result:1.Error message "Please enter password" should be displayed.
 2.User should stay on the same page.
 Actual result: No validation message is displayed when the password field is left empty and "New Registration" button is clicked.
 severity:Medium
 Priority:Medium
 screenshot:
+Bug ID:BUG102
+Title: Username field accepts whitespace-only input during registration
+Module:	User Registration
+Precondition:	User is on the Sign Up page
+Steps to Reproduce:
+1. Open the website.
+2. Click NEW REGISTRATION.
+3. Enter one or more spaces in the Username field.
+4. Enter a valid password.
+5. Click REGISTER.
+Expected Result: The application should trim the input and display a validation message such as "Username cannot be empty" or "Please enter a valid username."
+Actual Result: The application accepts the whitespace-only username and proceeds with the registration request (or displays an incorrect response).
+Severity: Medium(The application allows invalid input, but it doesn't crash or cause data loss.)
+Priority: High(Input validation is a fundamental requirement, and this should be fixed to prevent invalid user accounts or misleading behavior.)
+
+Bug ID:BUG103
+Title: Username with trailing whitespace is treated as a different user during registration
+Module: User Registration
+Steps to Reproduce:
+1.	Register a new user with username "testuser".
+2.	Register another user with username "testuser " (one trailing space).
+3.	Use any valid password.
+4.	Submit the registration.
+Expected Result:
+The application should trim leading and trailing whitespace before validation and reject the second registration with a message like:
+"This user already exists."
+Actual Result:
+The application accepts "testuser" and "testuser " as two different usernames.
+Severity: Medium
+Priority: High
