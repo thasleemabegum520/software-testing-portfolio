@@ -41,3 +41,4 @@ Actual Result:
 The application accepts "testuser" and "testuser " as two different usernames.
 Severity: Medium
 Priority: High
+
