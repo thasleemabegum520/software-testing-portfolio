@@ -40,3 +40,43 @@ Expected Result:
 •	Table structure should be hidden when no data exists
 Severity: Low to Medium (Functional behavior is correct, but UX is not handled properly)
 Priority: Medium (Affects user experience and clarity)
+
+Bug ID:BUG_502accepts invalid card number format (e.g., “12” is accepted)
+📍 Module
+Checkout / Place Order
+________________________________________
+🌐 URL
+https://www.demoblaze.com/index.html
+________________________________________
+🐛 Bug Description
+The Place Order form accepts an invalid card number (e.g., “12”) and still allows the order to be placed successfully. The system does not validate card number format, length, or structure.
+________________________________________
+🔁 Steps to Reproduce
+1.	Open https://www.demoblaze.com/index.html
+2.	Login with valid credentials
+3.	Add product to cart
+4.	Go to Cart
+5.	Click “Place Order”
+6.	Fill form:
+o	Name: valid name
+o	Country/City/Month/Year: valid values
+o	Card Number: 12
+7.	Click “Purchase”
+________________________________________
+❗ Actual Result
+•	Order is placed successfully
+•	Invalid card number is accepted
+•	No validation error shown
+________________________________________
+✅ Expected Result
+•	Card number should be validated (length + numeric format)
+•	Invalid inputs like “12” should be rejected
+•	Proper error message should be shown (e.g., “Enter valid card number”)
+________________________________________
+🔥 Severity
+Critical / High
+👉 Because it affects payment validation integrity
+________________________________________
+⚡ Priority
+High
+👉 Core checkout/payment validation issue
