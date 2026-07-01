@@ -9,7 +9,7 @@ This repository contains sample Manual Testing artifacts for E-Commerce website,
 
 * [Bug Reports](Bug%20Reports)
 
-*[SQL Queries](SQL%20Queries)
+* [SQL Queries](SQL%20Queries)
 
 The project demonstrates fundamental software testing skills such as test case design, defect reporting, and validation testing
 
