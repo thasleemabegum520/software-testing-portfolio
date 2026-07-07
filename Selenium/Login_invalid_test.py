@@ -16,13 +16,7 @@ driver.find_element(By.XPATH,"//input[@name='username']").send_keys("Admin")
 driver.find_element(By.XPATH,"//input[@name='password']").send_keys("admin")
 #click login
 login.click()
-import time
-time.sleep(3)
 
-paragraphs = driver.find_elements(By.TAG_NAME, "p")
-
-for p in paragraphs:
-    print(p.text)
 print(driver.title)
 print(driver.current_url)
 #Wait for error message
