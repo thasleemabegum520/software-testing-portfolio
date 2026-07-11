@@ -1,21 +1,41 @@
-# software-testing-portfolio
-This repository contains sample Manual Testing artifacts for E-Commerce website, including:
+# Software Testing Portfolio
 
-* [Test Plan](Test%20Plan)
+## About Me
 
-* [Test Scenarios](Test%20Scenarios)
+B.Tech Computer Science graduate aspiring to become a QA Engineer.
 
-* [TestCases](TestCases)
+Skills:
+- Manual Testing
+- Selenium with Python
+- SQL
+- API Testing using Postman
+- Git & GitHub
 
-* [Bug Reports](Bug%20Reports)
+## Repository Structure
 
-* [SQL Queries](SQL%20Queries)
+📁 Manual Testing
 
-The project demonstrates fundamental software testing skills such as test case design, defect reporting, and validation testing
+📁 Selenium
 
-The tools used in this project are:
+📁 API Testing
 
-* ### API Testing (POSTMAN)
-* ### GitHub
-* ### Jira(Basic)
-* ### Selenium(Beginner level)
+📁 SQL
+
+📁 Bug Reports
+
+📁 Test Plans
+
+## Projects
+
+### OrangeHRM Login Automation
+- Positive Login
+- Negative Login
+- XPath
+- CSS Selector
+- Explicit Wait
+- Assertions
+
+### Demoblaze Manual Testing
+- Test Cases
+- Bug Reports
+- Test Plan
