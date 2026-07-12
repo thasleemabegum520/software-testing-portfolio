@@ -13,17 +13,17 @@ Skills:
 
 ## Repository Structure
 
-📁 [API Testing](API%20Testing)
+📁 [Manual Testing](Manual%20Testing)
+
+📁 [Test Plan](Test%20Plan)
 
 📁 [Bug Reports](Bug%20Reports)
 
-📁 [Manual Testing](Manual%20Testing)
-
-📁 [Selenium](Selenium)
+📁 [API Testing](API%20Testing)
 
 📁 [SQL Queries](SQL%20Queries)
 
-📁 [Test Plan](Test%20Plan)
+📁 [Selenium](Selenium)
 
 ## Projects
 
