@@ -67,9 +67,16 @@
               "});\r",
               "\r",
               "const jsonData = pm.response.json();\r",
+              "const requestBody = JSON.parse(pm.request.body.raw);\r",
               "\r",
               "pm.test(\"Created post has an ID\", function () {\r",
               "    pm.expect(jsonData).to.have.property(\"id\");\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Submitted data is returned\", function () {\r",
+              "    pm.expect(jsonData.title).to.eql(requestBody.title);\r",
+              "    pm.expect(jsonData.body).to.eql(requestBody.body);\r",
+              "    pm.expect(jsonData.userId).to.eql(requestBody.userId);\r",
               "});"
             ],
             "type": "text/javascript",
@@ -86,7 +93,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n    \"Title\":\"The QA Practice\",\r\n    \"body\":\"Learning Postman environment variables\",\r\n    \"user_id\":2\r\n}",
+          "raw": "{\r\n    \"title\":\"The QA Practice\",\r\n    \"body\":\"Learning Postman environment variables\",\r\n    \"userId\":2\r\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -113,13 +120,20 @@
           "script": {
             "exec": [
               "const jsonData = pm.response.json();\r",
+              "const requestBody = JSON.parse(pm.request.body.raw);\r",
               "\r",
               "pm.test(\"Status code is 200\", function () {\r",
               "    pm.response.to.have.status(200);\r",
               "});\r",
               "\r",
-              "pm.test(\"Title is updated\", function () {\r",
-              "    pm.expect(jsonData.title).to.eql(\"The QA Practice\");\r",
+              "pm.test(\"Post title is updated\", function () {\r",
+              "    pm.expect(jsonData.title).to.eql(requestBody.title);\r",
+              "})\r",
+              "pm.test(\"Post body is updated\", function (){\r",
+              "    pm.expect(jsonData.body).to.eql(requestBody.body);\r",
+              "})\r",
+              "pm.test(\"Post userId is updated\", function (){\r",
+              "    pm.expect(jsonData.userId).to.eql(requestBody.userId);\r",
               "});"
             ],
             "type": "text/javascript",
@@ -136,7 +150,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n    \"title\":\"The QA Practice\",\r\n    \"body\" : \"Updated using Environment variables\",\r\n    \"user_id\":2\r\n}",
+          "raw": "{\r\n    \"title\":\"The QA Practice\",\r\n    \"body\" : \"Updated using Environment variables\",\r\n    \"userId\":2\r\n}",
           "options": {
             "raw": {
               "language": "json"
