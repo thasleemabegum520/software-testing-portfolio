@@ -1,38 +1,50 @@
 # API Testing Using Postman
 
-## Project Overview
+## Objective
 
-This project demonstrates basic REST API testing using Postman and the JSONPlaceholder public API.
+This project demonstrates REST API testing using Postman and the JSONPlaceholder public API.
 
-## API Requests Covered
+## Features Covered
 
-* GET user details
-* POST a new post
-* PUT an existing post
-* DELETE a post
+* GET Request
+* POST Request
+* PUT Request
+* DELETE Request
+* Environment Variables
+* Response Validation
+* Status Code Validation
+* JavaScript Test Scripts
 
-## Validations Performed
+## Environment Variables
 
-* HTTP status-code validation
-* JSON response-format validation
-* Required-field validation
-* Response-data validation
-* Resource ID validation
-* Successful delete-response validation
+* base_url
+* user_id
+* post_id
 
-## Postman Features Used
+## Test Cases
 
-* Collections
-* Environment variables
-* GET, POST, PUT, and DELETE requests
-* Post-response test scripts
-* JavaScript assertions
-* Collection Runner
+### GET User
 
-## Test API
+* Verify status code is 200
+* Verify correct user ID
+* Verify response contains required fields
 
-JSONPlaceholder was used as the public practice API.
+### POST Create Post
 
-## Important Note
+* Verify status code is 201
+* Verify response contains an ID
+* Verify submitted data matches the response
 
-JSONPlaceholder simulates create, update, and delete operations. Changes are not permanently stored on the server.
+### PUT Update Post
+
+* Verify status code is 200
+* Verify title, body, and userId are updated
+
+### DELETE Post
+
+* Verify successful deletion response (200 or 204)
+
+## Tool Used
+
+* Postman
+* JSONPlaceholder API
