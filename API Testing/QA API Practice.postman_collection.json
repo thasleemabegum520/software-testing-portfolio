@@ -36,24 +36,12 @@
           }
         }
       ],
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
       "request": {
         "auth": {
           "type": "noauth"
         },
         "method": "GET",
         "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
         "url": {
           "raw": "{{base_url}}/users/{{user_id}}",
           "host": [
@@ -98,7 +86,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n    \"Title\":\"The QA Practice\",\r\n    \"body\":\"Learning Postman environment variables\",\r\n   \"user_id\":2\r\n}",
+          "raw": "{\r\n    \"Title\":\"The QA Practice\",\r\n    \"body\":\"Learning Postman environment variables\",\r\n    \"user_id\":2\r\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -148,7 +136,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n    \"title\":\"The QA Practice\",\r\n    \"status\" : \"used env var\",\r\n    \"user_id\":222\r\n}",
+          "raw": "{\r\n    \"title\":\"The QA Practice\",\r\n    \"body\" : \"Updated using Environment variables\",\r\n    \"user_id\":2\r\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -191,15 +179,6 @@
         },
         "method": "DELETE",
         "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
         "url": {
           "raw": "{{base_url}}/posts/{{post_id}}",
           "host": [
